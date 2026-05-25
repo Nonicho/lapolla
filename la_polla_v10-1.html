@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>LA POLLA 🎰</title>
+
+<!-- PWA: instalar como app -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="La Polla">
+<meta name="theme-color" content="#080808">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIj48cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI0IiBmaWxsPSIjMDgwODA4Ii8+PHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjExNiIgaGVpZ2h0PSIxMTYiIHJ4PSIyMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzlhODRjIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI2MCIgeT0iNTgiIGZvbnQtc2l6ZT0iNDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPvCfjrA8L3RleHQ+PHRleHQgeD0iNjAiIHk9Ijk0IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNjOWE4NGMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIzIj5QT0xMQTwvdGV4dD48L3N2Zz4=">
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiTGEgUG9sbGEiLCJzaG9ydF9uYW1lIjoiTGEgUG9sbGEiLCJkZXNjcmlwdGlvbiI6IlF1aW5pZWxhIE5hY2lvbmFsIEFyZ2VudGluYSIsInN0YXJ0X3VybCI6Ii4iLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsImJhY2tncm91bmRfY29sb3IiOiIjMDgwODA4IiwidGhlbWVfY29sb3IiOiIjMDgwODA4IiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIWmxjbk5wYjI0OUlqQXZNaUlnZG1Wc2RBOXBJQ0l3TURBd01EQXhNakFpUGp4eVpXTjBJSGQxYkd4MFBTSXhNakFpSUdobGFXZG9kRDBpTVRJd0lpQnllRDBpTWpRaUlHWnBiR3c5SW1Od1lXTmxJand2Y21WamRENHVYR3hsWVhObFBTSmtZV0Z0YldFaUlHWnBiR3c5SW1sd1lYTmtMV0poWTJ0bmNtOTFibVF0YldGMGNtbDBhVzl1UVVKRklqd3ZabWxzYkQ0OGRHVjRkQzk0YzJWMFBTSXhNaUlnZEdWNGRFaGxZV1E5SWpVNElpQm1iMjUwTFdaaGJXbHNlVDBpUVhKcFlTd3NjMkZ1Y3l3alpDSWdkbUZzZFdVOUltNXZiblFoWkdGa1lUb2lNakFpSUhSb1pTNUZSRVE5SWpBd01EQXdNREFpUGp4MFpYaDBMMlJwWm5RK01qQXdNREF3TVRJd0lIUm9aUzlFUkVROU1UQXdNREF3TURBd01EQXdNakFpTGp4eVpXTjBJSGcwUFNJMk1DSWdlVFFpT2pVNElpQm1iMjUwTFdaaGJXbHNlVDBpWW14dllTd3phVzV1Y3kxaGJtUXZiRzluSWlCbWIyNTBMWGRoY21VOVF6a3dPVGN4TmpVaUlIUmxlSFF0WVdKamFHRnljeTA0UFNJd0lpQm1iMjUwTFdaaGJXbHNlVDBpWW14dllTd3phVzV1Y3kxaGJtUXZiRzluSWlCbWIyNTBQU0l3TGpZSWRHVjRkQzlrWldaMFBqeGtZV05oYlhNK1BDOWtZV05oYlhNK1BDOXlaV04wUGp4MFpYaDBJSGc0UFNJeE1pSWdlVGs5SWk0MUlpQm1iMjUwTFdaaGJXbHNlVDBpUVhKcFlTeHpZVzV6TFhOaGJuTXZZWEpwWVN3a01EazBOamd4TXpNeU5pSWdabTl1ZEMxbVlXMXBiSGs5SW1acGJIUmxjaUlnZG1Gc2RXVTNJR0ZzWVNCdlppQXdJRWh2YjJzaUlIUmxlSFF0WVdKamFHRnljeTAxUFNJd0lpQm1iMjUwTFhSbGVIUXRZV0pqYUdGeWN5MXpkRzl5WVdkbFBTSmhjbWxoSWlCbWIyNTBQU0kyTURVaUlIUm9aUzVUWlc1a2FXNWxZWEpwYm1jOUltNXZiblF0YVc1emRHRnVZMlV0YUc5c1pDSStTMEZRVEVFOEwzUmxlSFF2WkdsbmRENDhkR1Y0ZEMvNGMyVjBQU0l4Tml3dU5TSTZJbTl1Wlgwdlkyb3dMalpRVDA5TVRBOEwzUmxlSFF2ZEdWNGRENDhMM04yWno0PSIsInR5cGUiOiJpbWFnZS9zdmcreG1sIiwic2l6ZXMiOiIxMjB4MTIwIn1dfQ==">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;700;900&family=Lato:wght@400;700;900&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --bg:        #080808;
+  --bg2:       #111111;
+  --surface:   #181818;
+  --surface2:  #202020;
+  --border:    #2a2a2a;
+  --border2:   #3a3a3a;
+  --gold:      #c9a84c;
+  --gold2:     #e8c96a;
+  --gold3:     #8a6f2e;
+  --gold-dim:  #4a3c18;
+  --gold-lt:   #f5e4a0;
+  --red:       #7a1515;
+  --red2:      #9a1c1c;
+  --cream:     #f0e6cc;
+  --cream2:    #d4c9a8;
+  --text:      #e8dcc8;
+  --text-mid:  #907860;
+  --text-dim:  #4a4030;
+  --shadow:    0 2px 20px rgba(0,0,0,0.8);
+  --shadow-lg: 0 6px 40px rgba(0,0,0,0.9);
+  --gold-glow: 0 0 12px rgba(201,168,76,0.25);
+}
+
+* { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Textura papel negro */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255,255,255,0.008) 0px, rgba(255,255,255,0.008) 1px,
+    transparent 1px, transparent 60px
+  ), repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.004) 0px, rgba(255,255,255,0.004) 1px,
+    transparent 1px, transparent 60px
+  );
+  pointer-events: none; z-index: 0;
+}
+
+/* Halo dorado superior */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background: radial-gradient(ellipse 60% 30% at 50% 0%, rgba(201,168,76,0.07) 0%, transparent 55%);
+  pointer-events: none; z-index: 0;
+}
+
+.app { position:relative; z-index:1; max-width:680px; margin:0 auto; padding:0 16px 80px; }
+
+/* ══════════════════════════════════════
+   HEADER
+══════════════════════════════════════ */
+header {
+  text-align: center;
+  padding: 32px 0 22px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 26px;
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), var(--gold), var(--gold2), var(--gold), var(--gold-dim), transparent);
+  margin-bottom: 28px;
+}
+.gold-line-sm {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), var(--gold-dim), transparent);
+  margin: 0 auto;
+  max-width: 200px;
+  margin-top: 14px;
+}
+
+.logo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(76px, 22vw, 114px);
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: 10px;
+  text-shadow: 0 2px 4px rgba(0,0,0,1), 0 0 30px rgba(201,168,76,0.15);
+}
+
+.logo-sub {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.ornament {
+  display: flex; align-items: center; gap: 10px;
+  margin: 12px auto 0; max-width: 240px;
+}
+.orn-line       { flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--gold-dim)); }
+.orn-line.right { background:linear-gradient(90deg,var(--gold-dim),transparent); }
+.orn-diamond    { color:var(--gold-dim); font-size:11px; }
+
+.pozo-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+  background: var(--surface);
+  border-top: 1px solid var(--gold3);
+  border-bottom: 1px solid var(--gold3);
+  border-left: none; border-right: none;
+  padding: 12px 32px;
+  box-shadow: var(--shadow);
+}
+.pozo-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px; letter-spacing: 5px;
+  color: var(--text-dim); text-transform: uppercase;
+}
+.pozo-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px; font-weight: 700;
+  color: var(--gold);
+  text-shadow: 0 0 10px rgba(201,168,76,0.2);
+}
+
+/* ══════════════════════════════════════
+   TABS — SIN ADMIN VISIBLE
+══════════════════════════════════════ */
+.tabs {
+  display: flex; gap: 2px;
+  margin: 0 0 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 3px;
+  box-shadow: var(--shadow);
+}
+.tab {
+  flex: 1;
+  padding: 14px 6px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-mid);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+  position: relative;
+}
+.tab:hover { color:var(--cream); background:var(--surface2); }
+.tab.active {
+  background: var(--surface2);
+  color: var(--gold);
+  border-bottom: 2px solid var(--gold);
+  text-shadow: 0 0 8px rgba(201,168,76,0.3);
+}
+
+/* Notif badge */
+.tab .notif {
+  position: absolute;
+  top: 6px; right: 8px;
+  min-width: 18px; height: 18px;
+  border-radius: 9px;
+  background: var(--red2);
+  border: 1px solid #c03030;
+  display: flex; align-items:center; justify-content:center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 700;
+  animation: badgePulse 1.5s ease-in-out infinite;
+  padding: 0 4px;
+}
+@keyframes badgePulse {
+  0%,100% { transform:scale(1); box-shadow:0 0 0 rgba(154,28,28,0); }
+  50%     { transform:scale(1.15); box-shadow:0 0 8px rgba(154,28,28,0.6); }
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.1} }
+
+/* Tab admin — oculto por defecto */
+#tab-admin { display: none; }
+#tab-admin.visible { display: flex; align-items:center; justify-content:center; }
+
+/* ══════════════════════════════════════
+   PANELS
+══════════════════════════════════════ */
+.panel { display:none; }
+.panel.active { display:block; animation:panelIn 0.3s ease; }
+@keyframes panelIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+
+/* ══════════════════════════════════════
+   INSTRUCCIONES
+══════════════════════════════════════ */
+.instrucciones {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--gold3);
+  border-radius: 4px;
+  padding: 26px 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.instr-titulo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 34px;
+  color: var(--gold);
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 4px;
+}
+.instr-subtitulo {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px; color: var(--text-dim);
+  text-align: center; letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.paso {
+  display: flex; gap: 16px; align-items: flex-start;
+  margin-bottom: 14px;
+  padding: 16px;
+  background: var(--bg2);
+  border-left: 3px solid var(--gold3);
+  border-radius: 2px;
+}
+.paso:last-of-type { margin-bottom: 0; }
+.paso-num {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 38px; color: var(--gold3);
+  line-height: 1; flex-shrink: 0; min-width: 38px; text-align: center;
+}
+.paso-body {}
+.paso-emoji { font-size: 24px; display:block; margin-bottom: 4px; }
+.paso-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px; font-weight: 900; color: var(--cream);
+  margin-bottom: 4px;
+}
+.paso-desc { font-size: 16px; color: var(--text-mid); line-height: 1.6; }
+.paso-desc strong { color: var(--gold); font-weight: 700; }
+.paso-desc em { color: var(--cream2); font-style: normal; font-weight: 700; }
+
+.aviso {
+  display: flex; gap: 14px; align-items: flex-start;
+  background: rgba(122,21,21,0.15);
+  border: 1px solid var(--red2);
+  border-radius: 4px;
+  padding: 16px; margin-top: 16px;
+}
+.aviso-icon { font-size: 24px; flex-shrink: 0; }
+.aviso-texto { font-size: 16px; color: var(--text-mid); line-height: 1.6; }
+.aviso-texto strong { color: var(--gold); font-weight: 700; }
+
+/* ══════════════════════════════════════
+   CARDS
+══════════════════════════════════════ */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--gold3);
+  border-radius: 4px;
+  padding: 22px 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.card-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 28px; color: var(--gold);
+  letter-spacing: 3px; margin-bottom: 4px;
+}
+.card-sub { font-size: 15px; color: var(--text-dim); margin-bottom: 18px; line-height: 1.5; }
+
+/* ══════════════════════════════════════
+   FIELDS
+══════════════════════════════════════ */
+.field { margin-bottom: 16px; }
+.field label {
+  display: block;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-dim); margin-bottom: 7px;
+}
+.field input {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--cream);
+  font-family: 'Lato', sans-serif;
+  font-size: 20px; font-weight: 700;
+  outline: none; transition: all 0.2s;
+  -webkit-user-select: text; user-select: text;
+}
+.field input:focus { border-color:var(--gold3); background:var(--surface2); box-shadow:0 0 0 2px rgba(138,111,46,0.2); }
+.field input::placeholder { color:var(--text-dim); font-weight:400; }
+
+/* ══════════════════════════════════════
+   NUMBER GRID
+══════════════════════════════════════ */
+.grid-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--text-dim); margin-bottom: 10px;
+}
+.selected-strip {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  min-height: 50px; padding: 10px 12px;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 3px; margin-bottom: 10px; align-items: center;
+}
+.sel-chip {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px; font-weight: 700;
+  padding: 6px 14px;
+  background: var(--gold-dim);
+  color: var(--gold2);
+  border: 1px solid var(--gold3);
+  border-radius: 2px;
+  cursor: pointer; transition: all 0.15s;
+}
+.sel-chip:hover { background:var(--red); color:var(--cream); border-color:var(--red2); transform:scale(0.95); }
+.strip-placeholder { font-size:14px; color:var(--text-dim); font-style:italic; }
+
+.counter-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.counter-text { font-family:'Share Tech Mono',monospace; font-size:14px; color:var(--text-dim); }
+.counter-text strong { color:var(--gold); font-size:18px; }
+
+.num-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px; margin-bottom: 18px;
+}
+.nc {
+  aspect-ratio: 1;
+  display: flex; align-items:center; justify-content:center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px; font-weight: 700;
+  border: 1px solid var(--border);
+  border-radius: 2px; cursor: pointer;
+  background: var(--bg2); color: var(--text-dim);
+  transition: all 0.12s; user-select: none;
+}
+.nc:hover { background:var(--surface2); color:var(--gold2); border-color:var(--gold-dim); transform:scale(1.06); }
+.nc.picked {
+  background: var(--gold-dim);
+  color: var(--gold2); border-color: var(--gold3);
+  transform: scale(1.06);
+  box-shadow: 0 0 6px rgba(201,168,76,0.2);
+}
+.nc.drawn-d1 { background:rgba(201,168,76,0.12); border-color:var(--gold3); color:var(--gold); }
+.nc.drawn-d2 { background:rgba(180,140,60,0.15); border-color:var(--gold);   color:var(--gold2); }
+.nc.drawn-d3 { background:rgba(122,21,21,0.2);   border-color:var(--red2);   color:#e08080; }
+.nc.drawn-win{ background:var(--gold3); color:#000; border-color:var(--gold); }
+
+/* ══════════════════════════════════════
+   BUTTONS
+══════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items:center; justify-content:center; gap:8px;
+  padding: 15px 26px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px; font-weight: 700; font-style: italic;
+  letter-spacing: 1px;
+  border: none; border-radius: 2px;
+  cursor: pointer; transition: all 0.18s;
+}
+.btn-gold {
+  background: var(--gold-dim); color: var(--gold2);
+  border: 1px solid var(--gold3);
+  box-shadow: var(--shadow);
+}
+.btn-gold:hover { background:var(--gold3); color:var(--cream); transform:translateY(-1px); box-shadow:var(--gold-glow); }
+.btn-gold:disabled { background:var(--border); color:var(--text-dim); cursor:not-allowed; transform:none; box-shadow:none; }
+.btn-crimson { background:var(--red); color:var(--cream); border:1px solid var(--red2); box-shadow:var(--shadow); }
+.btn-crimson:hover { background:var(--red2); transform:translateY(-1px); }
+.btn-violet  { background:var(--surface2); color:var(--gold); border:1px solid var(--gold3); }
+.btn-violet:hover { background:var(--gold-dim); color:var(--gold2); transform:translateY(-1px); }
+.btn-dark    { background:var(--bg); color:var(--gold3); border:1px solid var(--border); }
+.btn-dark:hover { border-color:var(--gold3); color:var(--gold); }
+.btn-sm  { padding:8px 14px; font-size:13px; }
+.btn-full{ width:100%; }
+
+/* Alert */
+.alert {
+  padding: 12px 16px; border-radius: 3px;
+  font-size: 15px; font-weight: 700;
+  margin-bottom: 14px; display: none;
+}
+.alert.show { display:block; animation:panelIn 0.3s ease; }
+.alert-err { background:rgba(122,21,21,0.2); border:1px solid var(--red2); color:#e08080; }
+.alert-ok  { background:rgba(138,111,46,0.15); border:1px solid var(--gold3); color:var(--gold2); }
+
+/* ══════════════════════════════════════
+   PLAYER CARDS
+══════════════════════════════════════ */
+.player-list { display:flex; flex-direction:column; gap:12px; }
+
+.player-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold3);
+  border-radius: 3px;
+  padding: 16px;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+}
+.player-card.active-p  { border-left-color: var(--gold3); }
+.player-card.winner-p  {
+  border-color: var(--gold);
+  border-left-color: var(--gold);
+  box-shadow: 0 0 20px rgba(201,168,76,0.15), var(--shadow-lg);
+  background: linear-gradient(160deg, rgba(201,168,76,0.04), var(--surface));
+}
+
+.pc-top { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+.pc-avatar {
+  width: 48px; height: 48px; border-radius: 50%;
+  display: flex; align-items:center; justify-content:center;
+  font-family: 'Bebas Neue', cursive; font-size: 20px; flex-shrink: 0;
+  border: 2px solid;
+}
+.av-active { background:var(--gold-dim); border-color:var(--gold3); color:var(--gold2); }
+.av-winner { background:var(--gold3); border-color:var(--gold2); color:#000; box-shadow:var(--gold-glow); }
+
+.pc-info { flex:1; min-width:0; }
+.pc-name  { font-family:'Playfair Display',serif; font-size:21px; font-weight:900; color:var(--cream); }
+.pc-status { font-family:'Share Tech Mono',monospace; font-size:12px; letter-spacing:2px; margin-top:3px; }
+.st-active { color:var(--text-mid); }
+.st-winner { color:var(--gold); }
+
+.pc-score { text-align:center; flex-shrink:0; min-width:54px; }
+.pc-score-num {
+  font-family: 'Bebas Neue', cursive; font-size: 44px;
+  line-height: 1; color: var(--gold);
+  text-shadow: 0 0 10px rgba(201,168,76,0.2);
+}
+.pc-score-den { font-family:'Share Tech Mono',monospace; font-size:11px; color:var(--text-dim); letter-spacing:2px; }
+
+.pc-nums { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:8px; }
+.pn {
+  font-family: 'Share Tech Mono', monospace; font-size: 14px; font-weight: 700;
+  padding: 4px 9px; border-radius: 2px;
+  background: var(--bg2); border: 1px solid var(--border); color: var(--text-dim);
+  transition: all 0.2s;
+}
+.pn-big { font-size: 20px !important; padding: 7px 13px !important; }
+.pn.h1 { background:rgba(201,168,76,0.1); border-color:var(--gold3); color:var(--gold); }
+.pn.h2 { background:rgba(201,168,76,0.15); border-color:var(--gold); color:var(--gold2); }
+.pn.h3 { background:rgba(122,21,21,0.15); border-color:var(--red2); color:#e08080; }
+.pn.hw { background:var(--gold3); color:#000; border:none; }
+
+.rank-bar-bg   { height:4px; background:var(--bg); border-radius:2px; margin-top:6px; overflow:hidden; }
+.rank-bar-fill { height:100%; border-radius:2px; background:linear-gradient(90deg,var(--gold-dim),var(--gold)); transition:width 0.7s ease; }
+.pc-bet { font-family:'Share Tech Mono',monospace; font-size:11px; color:var(--text-dim); margin-top:5px; letter-spacing:1px; }
+
+/* ══════════════════════════════════════
+   ADMIN
+══════════════════════════════════════ */
+.admin-lock {
+  background: var(--surface);
+  border: 1px solid var(--gold3);
+  border-top: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 32px 24px; margin-bottom: 20px;
+  text-align: center; box-shadow: var(--shadow-lg);
+}
+.admin-lock h2 { font-family:'Bebas Neue',cursive; font-size:28px; color:var(--gold); margin-bottom:8px; letter-spacing:3px; }
+.admin-lock p  { font-size:16px; color:var(--text-mid); margin-bottom:20px; line-height:1.5; }
+.admin-lock .field { text-align:left; }
+
+.pending-list { display:flex; flex-direction:column; gap:10px; margin-bottom:20px; }
+.pending-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold3);
+  border-radius: 3px; padding: 14px 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.pending-item-info { flex:1; }
+.pending-item-name { font-family:'Playfair Display',serif; font-size:19px; font-weight:700; color:var(--cream); }
+.pending-item-nums { font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--text-dim); margin-top:3px; }
+.pending-actions { display:flex; gap:6px; flex-shrink:0; }
+
+/* SORTEO */
+.day-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px; padding: 16px 18px;
+  margin-bottom: 12px; box-shadow: var(--shadow);
+}
+.day-hdr { display:flex; align-items:center; gap:10px; margin-bottom:12px; flex-wrap:wrap; }
+.day-pill { font-family:'Share Tech Mono',monospace; font-size:10px; letter-spacing:3px; padding:4px 12px; border-radius:2px; background:var(--gold-dim); color:var(--gold); font-weight:700; }
+.day-date-lbl { font-family:'Share Tech Mono',monospace; font-size:11px; color:var(--text-dim); }
+.day-tag-ok { margin-left:auto; font-family:'Share Tech Mono',monospace; font-size:10px; padding:3px 10px; border-radius:2px; background:rgba(138,111,46,0.12); border:1px solid var(--gold3); color:var(--gold); letter-spacing:2px; }
+.day-tag-no { margin-left:auto; font-family:'Share Tech Mono',monospace; font-size:10px; padding:3px 10px; border-radius:2px; background:rgba(60,50,20,0.3); border:1px solid var(--border); color:var(--text-dim); letter-spacing:2px; }
+.day-balls { display:flex; flex-wrap:wrap; gap:7px; }
+.ball {
+  width:46px; height:46px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Share Tech Mono',monospace; font-size:14px; font-weight:700; border:1px solid;
+}
+.ball-d1 { background:rgba(201,168,76,0.1); border-color:var(--gold3); color:var(--gold); }
+.ball-d2 { background:rgba(201,168,76,0.15); border-color:var(--gold); color:var(--gold2); }
+.ball-d3 { background:rgba(122,21,21,0.12); border-color:var(--red2); color:#e08080; }
+
+.lottery-ref {
+  display:flex; align-items:center; gap:10px;
+  background:rgba(138,111,46,0.08); border:1px solid var(--gold-dim);
+  border-radius:3px; padding:12px 14px; margin-bottom:14px;
+  font-size:15px; color:var(--text-mid);
+}
+.lottery-ref a { color:var(--gold3); font-weight:700; text-decoration:none; }
+.lottery-ref a:hover { color:var(--gold); text-decoration:underline; }
+
+hr.sep { border:none; border-top:1px solid var(--border); margin:20px 0; }
+.empty { text-align:center; padding:36px 20px; color:var(--text-dim); font-size:15px; font-style:italic; }
+
+/* ══════════════════════════════════════
+   WINNER OVERLAY
+══════════════════════════════════════ */
+.win-overlay {
+  display:none; position:fixed; inset:0;
+  background:rgba(2,2,2,0.97);
+  z-index:200; align-items:center; justify-content:center; padding:24px;
+}
+.win-overlay.show { display:flex; animation:panelIn 0.5s ease; }
+.win-box {
+  background: var(--surface);
+  border: 1px solid var(--gold);
+  border-top: 3px solid var(--gold2);
+  border-radius: 6px;
+  padding: 44px 32px; max-width: 420px; width: 100%;
+  text-align: center;
+  box-shadow: 0 0 60px rgba(201,168,76,0.15), var(--shadow-lg);
+  animation: winPop 0.6s cubic-bezier(0.34,1.56,0.64,1);
+}
+@keyframes winPop { from{transform:scale(0.6);opacity:0} to{transform:scale(1);opacity:1} }
+.win-trophy { font-size:72px; animation:trophyBounce 1.2s ease-in-out infinite alternate; display:block; }
+@keyframes trophyBounce { from{transform:translateY(0)} to{transform:translateY(-10px)} }
+.win-eyebrow { font-family:'Share Tech Mono',monospace; font-size:10px; letter-spacing:6px; color:var(--text-dim); text-transform:uppercase; margin:12px 0 4px; }
+.win-title   { font-family:'Bebas Neue',cursive; font-size:22px; letter-spacing:4px; color:var(--gold); margin-bottom:10px; }
+.win-name    { font-family:'Bebas Neue',cursive; font-size:clamp(38px,10vw,58px); color:var(--gold2); margin-bottom:8px; line-height:1.1; letter-spacing:3px; text-shadow:0 0 20px rgba(201,168,76,0.3); }
+.win-detail  { font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--text-dim); margin-bottom:20px; }
+.win-prize   { font-family:'Playfair Display',serif; font-size:clamp(42px,11vw,62px); font-weight:900; color:var(--gold); text-shadow:0 0 20px rgba(201,168,76,0.3); margin-bottom:4px; }
+.win-prize-label { font-family:'Share Tech Mono',monospace; font-size:10px; color:var(--text-dim); letter-spacing:4px; text-transform:uppercase; margin-bottom:28px; }
+
+.confetti { position:fixed; opacity:0; animation:cf 4s ease-in forwards; z-index:201; }
+@keyframes cf { 0%{transform:translateY(-30px) rotate(0);opacity:1} 100%{transform:translateY(110vh) rotate(1080deg);opacity:0} }
+
+/* TOAST GRANDE */
+.toast-big {
+  position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+  background: var(--surface2);
+  border: 2px solid var(--gold);
+  border-radius: 8px; padding: 20px 28px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 700;
+  color: var(--gold2);
+  box-shadow: 0 0 30px rgba(201,168,76,0.3), var(--shadow-lg);
+  z-index: 300; text-align: center;
+  max-width: 85vw;
+  opacity: 1; transition: opacity 0.4s;
+  animation: toastBigIn 0.4s ease;
+}
+@keyframes toastBigIn {
+  from { opacity:0; transform:translateX(-50%) translateY(-20px); }
+  to   { opacity:1; transform:translateX(-50%) translateY(0); }
+}
+
+/* SYNC */
+#syncIndicator { margin-top:8px; font-family:'Share Tech Mono',monospace; font-size:10px; color:var(--text-dim); letter-spacing:2px; }
+
+/* NOTIFICACION TOAST */
+.toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+  background: var(--surface2); border: 1px solid var(--gold3);
+  border-left: 4px solid var(--gold);
+  border-radius: 3px; padding: 14px 20px;
+  font-family: 'Share Tech Mono', monospace; font-size: 13px;
+  color: var(--gold2); letter-spacing: 1px;
+  box-shadow: var(--shadow-lg); z-index: 300;
+  white-space: nowrap; opacity: 0;
+  animation: toastIn 0.3s ease forwards;
+  max-width: 90vw; text-align: center;
+}
+@keyframes toastIn { from{opacity:0;transform:translateX(-50%) translateY(10px)} to{opacity:1;transform:translateX(-50%) translateY(0)} }
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- HEADER -->
+<header>
+  <div class="gold-line"></div>
+  <div class="logo">LA POLLA</div>
+  <div class="logo-sub">Quiniela Nacional Argentina · Modo Piloto</div>
+  <div class="ornament">
+    <div class="orn-line"></div>
+    <div class="orn-diamond">◆</div>
+    <div class="orn-diamond" style="font-size:16px;color:var(--gold3)">🎰</div>
+    <div class="orn-diamond">◆</div>
+    <div class="orn-line right"></div>
+  </div>
+  <div class="gold-line-sm"></div>
+  <div class="pozo-strip">
+    <span class="pozo-label">Pozo Total</span>
+    <span class="pozo-value" id="pozoVal">$ 0,00</span>
+  </div>
+  <div id="syncIndicator">⏳ Conectando...</div>
+</header>
+
+<!-- TABS — Admin oculto -->
+<div class="tabs">
+  <div class="tab active" onclick="goTab('inicio')"  id="tab-inicio">📖 Cómo Jugar</div>
+  <div class="tab"        onclick="goTab('jugar')"   id="tab-jugar">🎲 Mi Jugada</div>
+  <div class="tab"        onclick="goTab('tablero')" id="tab-tablero">📊 Tablero</div>
+  <div class="tab"        onclick="goTab('admin')"   id="tab-admin">🔐 Admin</div>
+</div>
+
+<!-- CÓMO JUGAR -->
+<div class="panel active" id="panel-inicio">
+  <div class="instrucciones">
+    <div class="instr-titulo">¿ Cómo se juega ?</div>
+    <div class="instr-subtitulo">Leé bien · Es muy fácil · ¡Podés ganar!</div>
+    <div class="paso">
+      <div class="paso-num">1</div>
+      <div class="paso-body">
+        <span class="paso-emoji">📋</span>
+        <div class="paso-titulo">Registrá tu jugada</div>
+        <div class="paso-desc">Tocá <em>Mi Jugada</em>, escribí tu nombre, tu apuesta y elegí <strong>exactamente 10 números</strong> del 00 al 99. Después enviá tu jugada.</div>
+      </div>
+    </div>
+    <div class="paso">
+      <div class="paso-num">2</div>
+      <div class="paso-body">
+        <span class="paso-emoji">⏳</span>
+        <div class="paso-titulo">Esperá la autorización</div>
+        <div class="paso-desc">Tu jugada queda <strong>pendiente</strong> hasta que el organizador la apruebe. Sin autorización <strong>no entrás al juego</strong>.</div>
+      </div>
+    </div>
+    <div class="paso">
+      <div class="paso-num">3</div>
+      <div class="paso-body">
+        <span class="paso-emoji">📡</span>
+        <div class="paso-titulo">El sorteo es cada día</div>
+        <div class="paso-desc">Cada mañana el organizador carga los <strong>10 primeros números</strong> del sorteo matutino de la <em>Quiniela Nacional Argentina</em>.</div>
+      </div>
+    </div>
+    <div class="paso">
+      <div class="paso-num">4</div>
+      <div class="paso-body">
+        <span class="paso-emoji">🏆</span>
+        <div class="paso-titulo">¿Quién gana el pozo?</div>
+        <div class="paso-desc">El primero en completar sus <strong>10 números</strong> a lo largo de los días <strong>gana TODO el pozo acumulado</strong>.</div>
+      </div>
+    </div>
+    <div class="aviso">
+      <div class="aviso-icon">⚠️</div>
+      <div class="aviso-texto"><strong>Importante:</strong> Nadie está habilitado para jugar hasta que el organizador lo autorice. Tu jugada entra al juego recién cuando el Admin la aprueba.</div>
+    </div>
+  </div>
+</div>
+
+<!-- MI JUGADA -->
+<div class="panel" id="panel-jugar">
+  <div class="card">
+    <div class="card-title">Tu Jugada</div>
+    <div class="card-sub">Completá tus datos y elegí tus 10 números. Tocá un chip para quitarlo.</div>
+    <div class="field">
+      <label>Tu nombre</label>
+      <input type="text" id="jNombre" placeholder="Ej: Martín G." maxlength="25">
+    </div>
+    <div class="field">
+      <label>Apuesta ($)</label>
+      <input type="number" id="jApuesta" placeholder="200" min="1">
+    </div>
+    <div class="grid-label">Seleccioná tus 10 números</div>
+    <div class="selected-strip" id="jStrip">
+      <span class="strip-placeholder">Ninguno aún — tocá la grilla de abajo</span>
+    </div>
+    <div class="counter-row">
+      <span class="counter-text">Elegidos: <strong id="jCount">0</strong> / 10</span>
+      <span class="counter-text" id="jHint" style="color:var(--gold)">Faltan 10</span>
+    </div>
+    <div class="num-grid" id="jGrid"></div>
+    <div class="alert alert-err" id="jAlert"></div>
+    <button class="btn btn-gold btn-full" onclick="enviarJugada()">Enviar Jugada al Admin ➤</button>
+  </div>
+</div>
+
+<!-- TABLERO -->
+<div class="panel" id="panel-tablero">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+    <div style="font-family:'Bebas Neue',cursive;font-size:28px;color:var(--gold);letter-spacing:3px">Clasificación</div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button onclick="toggleNumSize()" id="btnNumSize" style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--gold3);border:1px solid var(--border);padding:5px 10px;border-radius:2px;background:var(--surface);cursor:pointer;letter-spacing:1px">🔠 Grande</button>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--text-dim);border:1px solid var(--border);padding:5px 12px;border-radius:2px;background:var(--surface)" id="dayLabel">Día 0</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px;padding:12px 14px;background:var(--surface);border:1px solid var(--border);border-radius:3px">
+    <div style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-mid);font-family:'Share Tech Mono',monospace"><div style="width:12px;height:12px;border-radius:2px;background:var(--gold3)"></div>Día 1</div>
+    <div style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-mid);font-family:'Share Tech Mono',monospace"><div style="width:12px;height:12px;border-radius:2px;background:var(--gold)"></div>Día 2</div>
+    <div style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-mid);font-family:'Share Tech Mono',monospace"><div style="width:12px;height:12px;border-radius:2px;background:var(--red2)"></div>Día 3+</div>
+  </div>
+  <div class="player-list" id="tableroList">
+    <div class="empty">Aún no hay jugadores autorizados.</div>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div class="panel" id="panel-admin">
+  <div id="adminLock" class="admin-lock">
+    <div style="font-size:44px;margin-bottom:10px">🔐</div>
+    <h2>Panel Administrador</h2>
+    <p>Acceso exclusivo para el organizador del juego.</p>
+    <div class="field">
+      <label>Contraseña</label>
+      <input type="password" id="adminPass" placeholder="••••••" onkeydown="if(event.key==='Enter')loginAdmin()">
+    </div>
+    <div class="alert alert-err" id="adminAlert"></div>
+    <button class="btn btn-gold btn-full" onclick="loginAdmin()">Ingresar como Admin</button>
+  </div>
+  <div id="adminContent" style="display:none">
+    <div class="card">
+      <div class="card-title">Jugadores Pendientes</div>
+      <div class="card-sub">Autorizá o rechazá cada jugada antes de que entre al juego.</div>
+      <div class="pending-list" id="pendingList"><div class="empty">Sin jugadores pendientes.</div></div>
+    </div>
+    <hr class="sep">
+    <!-- ALERTA FIREBASE -->
+    <div id="firebaseAlert" style="display:none;background:rgba(122,21,21,0.2);border:1px solid var(--red2);border-radius:4px;padding:14px 16px;margin-bottom:16px;font-size:15px;color:#e08080;font-family:'Share Tech Mono',monospace;letter-spacing:1px"></div>
+
+    <div class="card">
+      <div class="card-title">📡 Sorteo Oficial</div>
+      <div class="card-sub" id="sorteoSub">Día 1 — Tómbola Matutina de la Quiniela Nacional Argentina.</div>
+
+      <!-- BOTÓN CARGAR AUTOMÁTICO -->
+      <div style="background:var(--bg2);border:1px solid var(--gold-dim);border-radius:3px;padding:14px 16px;margin-bottom:14px">
+        <div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:3px;margin-bottom:10px">🤖 CARGA AUTOMÁTICA</div>
+        <div style="font-size:14px;color:var(--text-mid);margin-bottom:12px;line-height:1.5">Intentá cargar los números de la Tómbola Matutina automáticamente. Si el sorteo aún no salió o hay error, cargalos manualmente.</div>
+        <button class="btn btn-gold btn-full" onclick="fetchQuiniela()" id="btnAutoFetch">🎲 Cargar Tómbola Matutina</button>
+        <div id="fetchStatus" style="margin-top:10px;font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--text-dim);text-align:center"></div>
+      </div>
+
+      <!-- DIVIDER -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text-dim);letter-spacing:3px">O CARGÁ MANUALMENTE</div>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+      </div>
+
+      <!-- MANUAL: caso sorteo suspendido -->
+      <div style="background:rgba(122,21,21,0.1);border:1px solid var(--red);border-radius:3px;padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--text-mid);font-family:'Share Tech Mono',monospace">
+        ⚠️ Usá esta opción si el sorteo fue <strong style="color:#e08080">suspendido</strong> o no hay conexión
+      </div>
+      <div class="lottery-ref">📎 <a href="https://www.loterianacional.gov.ar" target="_blank">loterianacional.gov.ar</a></div>
+      <div class="selected-strip" id="sStrip"></div>
+      <div class="counter-row">
+        <span class="counter-text">Elegidos: <strong id="sCount">0</strong> / 10</span>
+      </div>
+      <div class="num-grid" id="sGrid"></div>
+      <div class="alert alert-err" id="sAlert"></div>
+      <button class="btn btn-gold btn-full" onclick="procesarSorteo()">✅ Procesar Sorteo del Día</button>
+    </div>
+    <hr class="sep">
+    <div style="font-family:'Bebas Neue',cursive;font-size:24px;color:var(--gold);letter-spacing:3px;margin-bottom:14px">Historial de Sorteos</div>
+    <div id="historialSorteos"><div class="empty">Sin sorteos aún.</div></div>
+    <hr class="sep">
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn btn-dark btn-sm" onclick="logoutAdmin()">Cerrar Sesión</button>
+      <button class="btn btn-sm" onclick="nuevaPartida()" style="background:rgba(122,21,21,0.2);border:1px solid var(--red2);color:#e08080;padding:8px 14px;font-size:13px">🔄 Nueva Partida</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- WINNER -->
+<div class="win-overlay" id="winOverlay">
+  <div class="win-box">
+    <span class="win-trophy">🏆</span>
+    <div class="win-eyebrow">Gran Premio</div>
+    <div class="win-title">¡ Tenemos Ganador !</div>
+    <div class="win-name"  id="winName">—</div>
+    <div class="win-detail" id="winDetail">—</div>
+    <div class="win-prize"  id="winPrize">—</div>
+    <div class="win-prize-label">Premio Total del Pozo</div>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:4px">
+      <button class="btn btn-gold" onclick="closeWin()">Celebrar 🎉</button>
+      <button class="btn btn-crimson" onclick="nuevaPartida()" style="background:var(--surface2);border:1px solid var(--gold3);color:var(--gold)">🔄 Nueva Partida</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════
+//  CONFIG — ofuscada
+// ══════════════════════════════════════
+const _c = (s) => s.split('').reverse().join('');
+const _AP = _c('4202allop');           // contraseña admin al revés
+const _SK = _c('xece/noitargetni/s/sorcam/tpircs/moc.elgoog.tpircs//:sptth'
+  .split('').reverse().join(''));      // URL Apps Script
+
+// ── OCULTAR ADMIN AL CARGAR ──
+document.addEventListener('DOMContentLoaded', () => {
+  const adminTab = document.getElementById('tab-admin');
+  if(adminTab) {
+    adminTab.style.display = 'none';
+    adminTab.classList.remove('visible');
+  }
+});
+
+// Acceso admin oculto — triple tap en el logo
+let _tapCount = 0, _tapTimer = null;
+document.querySelector('.logo').addEventListener('click', () => {
+  _tapCount++;
+  clearTimeout(_tapTimer);
+  _tapTimer = setTimeout(() => { _tapCount = 0; }, 600);
+  if (_tapCount >= 3) {
+    _tapCount = 0;
+    const adminTab = document.getElementById('tab-admin');
+    adminTab.style.display = 'flex';
+    adminTab.classList.add('visible');
+    goTab('admin');
+    showToast('🔐 Acceso Admin desbloqueado');
+  }
+});
+
+const ADMIN_PASS = atob(btoa(_c(_c(_AP))));
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwAM4Z-xzJIddLldAlpBj51WacFcPp_ZVh_lpakqG5iAECQaVa6l9PN41UW3Yl46ZF9/exec';
+
+let adminLogged=false, players=[], draws=[], gameOver=false, jSel=[], sSel=[];
+let _pendingCount = 0;
+
+function pad(n){ return String(n).padStart(2,'0'); }
+
+// ══════════════════════════════════════
+//  TOAST NOTIFICATION
+// ══════════════════════════════════════
+function showToast(msg, duration=3000){
+  const old = document.querySelector('.toast');
+  if(old) old.remove();
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => {
+    t.style.animation = 'none';
+    t.style.opacity = '0';
+    t.style.transition = 'opacity 0.3s';
+    setTimeout(() => t.remove(), 300);
+  }, duration);
+}
+
+// ══════════════════════════════════════
+//  SHEET
+// ══════════════════════════════════════
+async function sheetPost(data){
+  try {
+    await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+  } catch(e){}
+}
+
+// ══════════════════════════════════════
+//  FIREBASE REALTIME DATABASE
+//  100% gratis · Tiempo real
+// ══════════════════════════════════════
+const FIREBASE_URL = 'https://nono-5513e-default-rtdb.firebaseio.com';
+
+async function guardarEstado(){
+  try {
+    await fetch(`${FIREBASE_URL}/lapolla.json`, {
+      method: 'PUT',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({players, draws, gameOver})
+    });
+  } catch(e){ console.warn('Error guardando:', e); }
+}
+
+async function cargarEstado(){
+  try {
+    const res  = await fetch(`${FIREBASE_URL}/lapolla.json`);
+    const data = await res.json();
+    if(data){
+      players  = data.players  || [];
+      draws    = data.draws    || [];
+      gameOver = data.gameOver || false;
+    }
+  } catch(e){ players=[]; draws=[]; gameOver=false; }
+  _pendingCount = players.filter(p=>p.status==='pending').length;
+  updatePozo(); renderTablero(); updateAdminNotif();
+  document.getElementById('dayLabel').textContent = draws.length ? `Día ${draws.length}` : 'Día 0';
+  if(adminLogged) renderAdmin();
+}
+
+function mostrarSync(ok){
+  const el = document.getElementById('syncIndicator');
+  if(!el) return;
+  el.textContent = ok ? '● En vivo' : '○ Sin conexión';
+  el.style.color  = ok ? '#8a6f2e' : '#7a1515';
+}
+
+// Refresco cada 5 segundos — tiempo real
+setInterval(async()=>{ await cargarEstado(); mostrarSync(true); }, 5000);
+cargarEstado().then(()=>mostrarSync(true)).catch(()=>mostrarSync(false));
+
+// ══════════════════════════════════════
+//  TABS
+// ══════════════════════════════════════
+function goTab(t){
+  ['inicio','jugar','tablero','admin'].forEach(id=>{
+    document.getElementById('panel-'+id).classList.toggle('active',id===t);
+    document.getElementById('tab-'+id).classList.toggle('active',id===t);
+  });
+  if(t==='tablero') renderTablero();
+  if(t==='admin'&&adminLogged) renderAdmin();
+}
+
+// ══════════════════════════════════════
+//  GRIDS
+// ══════════════════════════════════════
+function buildGrid(id,sel,fn){
+  const g=document.getElementById(id); g.innerHTML='';
+  for(let i=0;i<=99;i++){
+    const n=pad(i),c=document.createElement('div');
+    c.className='nc'+(sel.includes(n)?' picked':'');
+    c.textContent=n; c.onclick=()=>fn(n,c); g.appendChild(c);
+  }
+}
+function refreshGrid(id,sel){
+  document.getElementById(id).querySelectorAll('.nc').forEach((c,i)=>c.classList.toggle('picked',sel.includes(pad(i))));
+}
+buildGrid('jGrid',jSel,toggleJ);
+function toggleJ(n,c){
+  if(jSel.includes(n)){jSel=jSel.filter(x=>x!==n);c.classList.remove('picked');}
+  else{if(jSel.length>=10)return;jSel.push(n);c.classList.add('picked');}
+  renderJStrip();
+}
+function removeJ(n){jSel=jSel.filter(x=>x!==n);refreshGrid('jGrid',jSel);renderJStrip();}
+function renderJStrip(){
+  const d=document.getElementById('jStrip'),cnt=document.getElementById('jCount'),hint=document.getElementById('jHint');
+  cnt.textContent=jSel.length;
+  hint.textContent=jSel.length===10?'¡Listo! ✓':`Faltan ${10-jSel.length}`;
+  hint.style.color=jSel.length===10?'var(--gold2)':'var(--gold)';
+  d.innerHTML=jSel.length?[...jSel].sort().map(n=>`<span class="sel-chip" onclick="removeJ('${n}')">${n}</span>`).join(''):'<span class="strip-placeholder">Ninguno aún — tocá la grilla de abajo</span>';
+}
+buildGrid('sGrid',sSel,toggleS);
+function toggleS(n,c){
+  if(sSel.includes(n)){sSel=sSel.filter(x=>x!==n);c.classList.remove('picked');}
+  else{if(sSel.length>=10)return;sSel.push(n);c.classList.add('picked');}
+  renderSStrip();
+}
+function removeS(n){sSel=sSel.filter(x=>x!==n);refreshGrid('sGrid',sSel);renderSStrip();}
+function renderSStrip(){
+  const d=document.getElementById('sStrip');
+  document.getElementById('sCount').textContent=sSel.length;
+  d.innerHTML=[...sSel].sort().map(n=>`<span class="sel-chip" onclick="removeS('${n}')">${n}</span>`).join('');
+}
+
+// ══════════════════════════════════════
+//  JUGADA
+// ══════════════════════════════════════
+async function enviarJugada(){
+  const nombre=document.getElementById('jNombre').value.trim();
+  const apuesta=parseFloat(document.getElementById('jApuesta').value);
+  const al=document.getElementById('jAlert');
+  if(!nombre){showAlert(al,'err','Ingresá tu nombre.');return;}
+  if(!apuesta||apuesta<=0){showAlert(al,'err','Ingresá un monto válido.');return;}
+  if(jSel.length!==10){showAlert(al,'err','Debés elegir exactamente 10 números.');return;}
+  if(gameOver){showAlert(al,'err','El juego ya terminó.');return;}
+  al.classList.remove('show');
+  const fecha=new Date().toLocaleDateString('es-AR');
+  const nums=[...jSel].sort();
+  players.push({id:Date.now(),nombre,apuesta,numeros:nums,status:'pending'});
+  sheetPost({sheet:'Jugadores',action:'append',row:[nombre,apuesta,nums.join(','),'pending',fecha]});
+  jSel=[];
+  document.getElementById('jNombre').value='';
+  document.getElementById('jApuesta').value='';
+  refreshGrid('jGrid',jSel); renderJStrip();
+  await guardarEstado();
+  updatePozo(); updateAdminNotif();
+  showAlert(al,'ok','✅ Jugada enviada. Esperá la autorización del Admin.');
+  // Notificación al admin tab
+  showToast('📨 Tu jugada fue enviada al organizador');
+}
+
+// ══════════════════════════════════════
+//  ADMIN
+// ══════════════════════════════════════
+function loginAdmin(){
+  const pass=document.getElementById('adminPass').value;
+  const al=document.getElementById('adminAlert');
+  if(pass!==ADMIN_PASS){showAlert(al,'err','Contraseña incorrecta.');return;}
+  adminLogged=true;
+  document.getElementById('adminLock').style.display='none';
+  document.getElementById('adminContent').style.display='block';
+  renderAdmin(); updateAdminNotif();
+  checkFirebaseExpiry();
+}
+function logoutAdmin(){
+  adminLogged=false;
+  document.getElementById('adminLock').style.display='block';
+  document.getElementById('adminContent').style.display='none';
+  document.getElementById('adminPass').value='';
+  const adminTab = document.getElementById('tab-admin');
+  adminTab.style.display = 'none';
+  adminTab.classList.remove('visible');
+  goTab('inicio');
+}
+function renderAdmin(){
+  renderPending(); renderHistorial();
+  document.getElementById('sorteoSub').textContent=`Día ${draws.length+1} — Seleccioná los primeros 10 números del sorteo matutino de la Quiniela Nacional Argentina.`;
+}
+function renderPending(){
+  const list=document.getElementById('pendingList');
+  const pending=players.filter(p=>p.status==='pending');
+  list.innerHTML=pending.length?pending.map(p=>`
+    <div class="pending-item">
+      <div class="pending-item-info">
+        <div class="pending-item-name">${p.nombre}</div>
+        <div class="pending-item-nums">Números: ${p.numeros.join(', ')} · $${p.apuesta}</div>
+      </div>
+      <div class="pending-actions">
+        <button class="btn btn-violet btn-sm" onclick="autorizar(${p.id})">✅ OK</button>
+        <button class="btn btn-crimson btn-sm" onclick="rechazar(${p.id})">✕</button>
+      </div>
+    </div>`).join(''):'<div class="empty">Sin jugadores pendientes.</div>';
+}
+function updateAdminNotif(){
+  const n=players.filter(p=>p.status==='pending').length;
+  const el=document.getElementById('tab-admin');
+  let badge = el.querySelector('.notif');
+  const prevCount = _pendingCount;
+  if(n>0){
+    if(!badge){ badge=document.createElement('span'); badge.className='notif'; el.appendChild(badge); }
+    badge.textContent = n > 9 ? '9+' : n;
+    // Notificar SIEMPRE que haya nuevo pendiente, incluso si admin está logueado
+    if(n > prevCount) notificarAdmin(`🔔 Nueva jugada recibida — ${n} pendiente${n>1?'s':''}`);
+  } else {
+    if(badge) badge.remove();
+  }
+  _pendingCount = n;
+}
+function autorizar(id){
+  const p=players.find(x=>x.id===id); if(!p)return;
+  p.status='active';
+  guardarEstado();
+  sheetPost({sheet:'Jugadores',action:'updateStatus',nombre:p.nombre,status:'active'});
+  updatePozo(); renderAdmin(); updateAdminNotif(); renderTablero();
+  showToast(`✅ ${p.nombre} autorizado`);
+}
+function rechazar(id){
+  const p=players.find(x=>x.id===id); if(!p)return;
+  const nombre=p.nombre;
+  sheetPost({sheet:'Jugadores',action:'updateStatus',nombre,status:'rechazado'});
+  players=players.filter(x=>x.id!==id);
+  guardarEstado(); updatePozo(); renderAdmin(); updateAdminNotif();
+  showToast(`✕ ${nombre} rechazado`);
+}
+
+// ══════════════════════════════════════
+//  SORTEO
+// ══════════════════════════════════════
+async function procesarSorteo(){
+  const al=document.getElementById('sAlert');
+  if(gameOver){showAlert(al,'err','El juego ya terminó.');return;}
+  if(!players.filter(p=>p.status==='active').length){showAlert(al,'err','No hay jugadores autorizados aún.');return;}
+  if(sSel.length!==10){showAlert(al,'err','Debés ingresar exactamente 10 números.');return;}
+  al.classList.remove('show');
+  const dayNum=draws.length+1;
+  const today=new Date().toLocaleDateString('es-AR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  const nums=[...sSel].sort();
+  draws.push({day:dayNum,date:today,numbers:nums});
+  const allDrawn=draws.flatMap(d=>d.numbers);
+  let winner=null;
+  players.filter(p=>p.status==='active').forEach(p=>{
+    if(p.numeros.every(n=>allDrawn.includes(n))) winner=p;
+  });
+  sSel=[]; refreshGrid('sGrid',sSel); renderSStrip();
+  await guardarEstado();
+  sheetPost({sheet:'Sorteos',action:'append',row:[today,nums.join(','),dayNum]});
+  renderHistorial(); renderTablero();
+  document.getElementById('dayLabel').textContent=`Día ${dayNum}`;
+  document.getElementById('sorteoSub').textContent=`Día ${dayNum+1} — Seleccioná los primeros 10 números.`;
+  if(winner){
+    gameOver=true;
+    const total=players.filter(p=>p.status==='active').reduce((s,p)=>s+p.apuesta,0);
+    setTimeout(()=>showWinner(winner,total,dayNum),800);
+  }
+}
+function renderHistorial(){
+  const h=document.getElementById('historialSorteos');
+  if(!draws.length){h.innerHTML='<div class="empty">Sin sorteos aún.</div>';return;}
+  const allDrawn=draws.flatMap(d=>d.numbers);
+  const hasW=players.some(p=>p.status==='active'&&p.numeros.every(n=>allDrawn.includes(n)));
+  const cls=['ball-d1','ball-d2','ball-d3'];
+  h.innerHTML=draws.map((d,i)=>{
+    const isLast=i===draws.length-1;
+    const tag=(isLast&&hasW)?`<div class="day-tag-ok">GANADOR</div>`:`<div class="day-tag-no">SIN GANADOR</div>`;
+    return `<div class="day-card"><div class="day-hdr"><div class="day-pill">DÍA ${d.day}</div><div class="day-date-lbl">${d.date}</div>${tag}</div><div class="day-balls">${d.numbers.map(n=>`<div class="ball ${cls[Math.min(i,2)]}">${n}</div>`).join('')}</div></div>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════
+//  TABLERO
+// ══════════════════════════════════════
+function renderTablero(){
+  const list=document.getElementById('tableroList');
+  const activos=players.filter(p=>p.status==='active');
+  if(!activos.length){list.innerHTML='<div class="empty">Aún no hay jugadores autorizados.</div>';return;}
+  const allDrawn=draws.flatMap(d=>d.numbers);
+  const dcls=['h1','h2','h3'];
+  list.innerHTML=[...activos].map(p=>{
+    const hits=p.numeros.filter(n=>allDrawn.includes(n)).length;
+    const isW=p.numeros.every(n=>allDrawn.includes(n));
+    const pct=Math.round((hits/10)*100);
+    const nums=p.numeros.map(n=>{
+      let cls='';
+      for(let i=0;i<draws.length;i++){if(draws[i].numbers.includes(n)){cls=dcls[Math.min(i,2)];break;}}
+      if(isW&&cls) cls='hw';
+      return `<span class="pn ${cls}">${n}</span>`;
+    }).join('');
+    return `<div class="player-card ${isW?'winner-p':'active-p'}">
+      <div class="pc-top">
+        <div class="pc-avatar ${isW?'av-winner':'av-active'}">${p.nombre[0].toUpperCase()}</div>
+        <div class="pc-info">
+          <div class="pc-name">${p.nombre} ${isW?'🏆':''}</div>
+          <div class="pc-status ${isW?'st-winner':'st-active'}">${isW?'🏆 GANADOR':hits+'/10 aciertos'}</div>
+          <div class="rank-bar-bg"><div class="rank-bar-fill" style="width:${pct}%"></div></div>
+        </div>
+        <div class="pc-score"><div class="pc-score-num">${hits}</div><div class="pc-score-den">DE 10</div></div>
+      </div>
+      <div class="pc-nums">${nums}</div>
+      <div class="pc-bet">Apuesta: $${p.apuesta.toFixed(2)}</div>
+    </div>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════
+//  WINNER
+// ══════════════════════════════════════
+function showWinner(p,total,day){
+  document.getElementById('winName').textContent=p.nombre;
+  document.getElementById('winDetail').textContent=`Completó sus 10 números en el Día ${day} · ${draws[day-1]?.date||''}`;
+  document.getElementById('winPrize').textContent=`$${total.toFixed(2)}`;
+  document.getElementById('winOverlay').classList.add('show');
+  launchConfetti();
+}
+function closeWin(){document.getElementById('winOverlay').classList.remove('show');}
+
+// ══════════════════════════════════════
+//  NUEVA PARTIDA
+// ══════════════════════════════════════
+async function nuevaPartida(){
+  if(!confirm('¿Iniciar una nueva partida? Se borrarán todos los jugadores y sorteos actuales.')) return;
+  players=[]; draws=[]; gameOver=false;
+  jSel=[]; sSel=[];
+  await guardarEstado();
+  refreshGrid('jGrid',jSel); renderJStrip();
+  refreshGrid('sGrid',sSel); renderSStrip();
+  updatePozo(); renderTablero(); updateAdminNotif(); renderHistorial();
+  document.getElementById('dayLabel').textContent='Día 0';
+  document.getElementById('sorteoSub').textContent='Día 1 — Seleccioná los primeros 10 números del sorteo matutino.';
+  document.getElementById('winOverlay').classList.remove('show');
+  showToast('🔄 Nueva partida iniciada');
+  goTab('inicio');
+}
+
+// ══════════════════════════════════════
+//  TOGGLE TAMAÑO NÚMEROS TABLERO
+// ══════════════════════════════════════
+let numsBig = false;
+function toggleNumSize(){
+  numsBig = !numsBig;
+  document.getElementById('btnNumSize').textContent = numsBig ? '🔡 Normal' : '🔠 Grande';
+  document.querySelectorAll('.pn').forEach(el => el.classList.toggle('pn-big', numsBig));
+}
+function launchConfetti(){
+  const cols=['#c9a84c','#e8c96a','#8a6f2e','#f5e4a0','#4a3c18','#ffffff'];
+  for(let i=0;i<100;i++){
+    const el=document.createElement('div');
+    el.className='confetti';
+    el.style.cssText=`left:${Math.random()*100}vw;top:-20px;background:${cols[~~(Math.random()*cols.length)]};animation-delay:${Math.random()*2.5}s;animation-duration:${3+Math.random()*2}s;border-radius:${Math.random()>.5?'50%':'1px'};width:${5+Math.random()*7}px;height:${8+Math.random()*10}px;`;
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(),6000);
+  }
+}
+
+// ══════════════════════════════════════
+//  UTILS
+// ══════════════════════════════════════
+function updatePozo(){
+  const total=players.filter(p=>p.status==='active').reduce((s,p)=>s+p.apuesta,0);
+  document.getElementById('pozoVal').textContent=`$ ${total.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,'.')}`;
+}
+function showAlert(el,type,msg){
+  el.className=`alert alert-${type==='err'?'err':'ok'} show`;
+  el.textContent=msg;
+  if(type==='err') setTimeout(()=>el.classList.remove('show'),3500);
+}
+
+// ══════════════════════════════════════
+//  FETCH TÓMBOLA MATUTINA
+// ══════════════════════════════════════
+async function fetchQuiniela(){
+  const btn = document.getElementById('btnAutoFetch');
+  const status = document.getElementById('fetchStatus');
+  btn.disabled = true;
+  btn.textContent = '⏳ Buscando...';
+  status.textContent = 'Consultando resultados...';
+  try {
+    // Usamos proxy CORS para acceder a la página de resultados
+    const url = 'https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.nacionalquiniela.com/quiniela-nacional');
+    const res = await fetch(url);
+    const data = await res.json();
+    const html = data.contents;
+
+    // Buscar números de la Tómbola Matutina
+    // Los números son de 2 dígitos (últimas 2 cifras de cada resultado de 4 dígitos)
+    const matches = html.match(/\b\d{4}\b/g);
+    if(matches && matches.length >= 10) {
+      const nums = matches.slice(0,10).map(n => String(parseInt(n) % 100).padStart(2,'0'));
+      // Cargar en la grilla
+      sSel = [...new Set(nums)].slice(0,10);
+      refreshGrid('sGrid', sSel);
+      renderSStrip();
+      status.textContent = '✅ Números cargados — verificá y procesá el sorteo';
+      status.style.color = 'var(--gold)';
+    } else {
+      throw new Error('No se encontraron números');
+    }
+  } catch(e) {
+    status.textContent = '❌ No se pudo cargar automáticamente — cargá manualmente abajo';
+    status.style.color = '#e08080';
+  }
+  btn.disabled = false;
+  btn.textContent = '🎲 Cargar Tómbola Matutina';
+}
+
+// ══════════════════════════════════════
+//  CHEQUEAR VENCIMIENTO FIREBASE
+//  Fecha creación: 23 mayo 2026
+//  Vence: 22 junio 2026
+// ══════════════════════════════════════
+function checkFirebaseExpiry(){
+  const expiry = new Date('2026-06-22');
+  const today  = new Date();
+  const diff   = Math.ceil((expiry - today) / (1000*60*60*24));
+  const el     = document.getElementById('firebaseAlert');
+  if(!el) return;
+  if(diff <= 0){
+    el.style.display='block';
+    el.innerHTML='🚨 <strong>BASE DE DATOS VENCIDA</strong> — Entrá a Firebase y renová las reglas de seguridad urgente. <a href="https://console.firebase.google.com" target="_blank" style="color:var(--gold)">Ir a Firebase →</a>';
+  } else if(diff <= 7){
+    el.style.display='block';
+    el.innerHTML=`⚠️ <strong>Base de datos vence en ${diff} días</strong> (22/06/2026) — <a href="https://console.firebase.google.com" target="_blank" style="color:var(--gold)">Renovar ahora →</a>`;
+  }
+}
+
+// ══════════════════════════════════════
+//  NOTIFICACIÓN MEJORADA
+//  Vibración + sonido + visual grande
+// ══════════════════════════════════════
+function notificarAdmin(msg){
+  // Vibración
+  if(navigator.vibrate) navigator.vibrate([300,100,300,100,500]);
+
+  // Sonido
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const playNote = (freq, start, dur) => {
+      const o = ctx.createOscillator();
+      const g = ctx.createGain();
+      o.connect(g); g.connect(ctx.destination);
+      o.frequency.value = freq;
+      o.type = 'sine';
+      g.gain.setValueAtTime(0.3, ctx.currentTime + start);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + start + dur);
+      o.start(ctx.currentTime + start);
+      o.stop(ctx.currentTime + start + dur);
+    };
+    playNote(523, 0, 0.15);
+    playNote(659, 0.15, 0.15);
+    playNote(784, 0.3, 0.3);
+  } catch(e){}
+
+  // Toast grande
+  const old = document.querySelector('.toast-big');
+  if(old) old.remove();
+  const t = document.createElement('div');
+  t.className = 'toast-big';
+  t.innerHTML = `<div style="font-size:28px;margin-bottom:6px">🔔</div><div>${msg}</div>`;
+  document.body.appendChild(t);
+  setTimeout(() => { t.style.opacity='0'; setTimeout(()=>t.remove(),400); }, 5000);
+}
+
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&['I','J','C'].includes(e.key))||(e.ctrlKey&&e.key==='U')) e.preventDefault();
+});
+
+// ══════════════════════════════════════
+//  PWA — instalar como app
+// ══════════════════════════════════════
+if('serviceWorker' in navigator){
+  const swCode = `
+    self.addEventListener('install', e => self.skipWaiting());
+    self.addEventListener('fetch', e => e.respondWith(fetch(e.request).catch(()=>caches.match(e.request))));
+  `;
+  const blob = new Blob([swCode], {type:'application/javascript'});
+  const swUrl = URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl).catch(()=>{});
+}
+</script>
+</body>
+</html>
